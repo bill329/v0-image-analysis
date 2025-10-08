@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lightbox Fix</title>
+  <script>
+    // This file is just a helper to ensure lightbox is properly initialized
+    // It's not actually used in the application
+    document.addEventListener('DOMContentLoaded', function() {
+      if (typeof lightbox !== 'undefined') {
+        lightbox.option({
+          'resizeDuration': 300,
+          'wrapAround': true,
+          'alwaysShowNavOnTouchDevices': true,
+          'disableScrolling': true,
+          'fadeDuration': 300,
+          'fitImagesInViewport': true,
+          'imageFadeDuration': 300,
+          'maxWidth': 1000,
+          'maxHeight': 800,
+          'positionFromTop': 50,
+          'showImageNumberLabel': true
+        });
+      }
+    });
+  </script>
+</head>
+<body>
+  <!-- This file is just a helper and not displayed -->
+</body>
+</html>
