@@ -1,4 +1,3 @@
-"use client"
 import Image from "next/image"
 import Link from "next/link"
 import { ArrowRight, Shield, Flame, Droplets, Wrench, Eye, Check } from "lucide-react"

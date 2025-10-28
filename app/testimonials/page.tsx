@@ -3,6 +3,18 @@ import Link from "next/link"
 import { ArrowRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
+import type { Metadata } from "next"
+
+
+// ✅ SEO Metadata for Service Area page
+export const metadata: Metadata = {
+  title: "Customer Reviews and Testimonials | Stone Concepts",
+  description:
+    "Read customer testimonials for Stone Concepts’ granite and quartz countertop installations in Massachusetts. Learn why homeowners trust our expert services.",
+  alternates: {
+    canonical: "https://www.stoneconcepts.net/testimonials",
+  },
+}
 
 // Replace the testimonials array with the actual testimonials
 const testimonials = [

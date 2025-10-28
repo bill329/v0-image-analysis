@@ -5,6 +5,17 @@ import Link from "next/link"
 import { OptimizedImage } from "@/components/optimized-image"
 import { ArrowRight, X, Maximize2 } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import FaqComponent from "@/components/faqComponent"
+
+interface FAQ {
+  question: string;
+  answer: string;
+}
+
+interface FaqComponentProps {
+  nycFaqs?: FAQ[];
+}
+
 
 export default function Home() {
   const [isChatExpanded, setIsChatExpanded] = useState(false)
@@ -12,6 +23,59 @@ export default function Home() {
   const toggleChat = () => {
     setIsChatExpanded(!isChatExpanded)
   }
+
+  const nycFaqs = [
+    {
+      question: "What types of countertops do you offer?",
+      answer:
+        "We offer granite, quartz, quartzite, marble, porcelain, and soapstone countertops. You can choose from a range of colors, patterns, and finishes. Looking for the best match for your kitchen or bathroom’s style becomes easier with our team’s expert support.",
+    },
+    {
+      question: "How do I get started with my countertop project?",
+      answer:
+        "Getting started is simple—just give us a call to schedule a free consultation. During this meeting, we'll discuss your design preferences and review material options that fit your style and budget. From there, we'll guide you through every step of the process, from selection to installation, ensuring a smooth experience from start to finish.",
+    },
+    {
+      question: "Do you provide countertop installation services?",
+      answer:
+        "Yes, we do. Stone Concepts offers professional countertop installation services throughout Massachusetts. Our experienced team specializes in precise cutting, fitting, and finishing to ensure your granite or quartz countertops are installed flawlessly. Whether it's your kitchen or bathroom, we deliver expert craftsmanship and a perfect fit every time.",
+    },
+    {
+      question: "How long does the process take?",
+      answer:
+        "The timeline varies depending on the size of your project, material selection, and complexity of the installation. On average, the entire process—from initial consultation and measurements through fabrication to final installation—takes 1-2 weeks. Regardless of your project's scope, we're committed to delivering a flawless finish that's worth the wait.",
+    },
+    {
+      question: "Are your countertops sealed?",
+      answer:
+        "Yes, we seal all natural stone countertops during installation to protect against stains. Quartz countertops, on the other hand, are non-porous and don't require sealing. To maintain the beauty and longevity of any countertop, we recommend regular cleaning and proper care.",
+    },
+    {
+      question: "Can I install new countertops over my existing ones?",
+      answer:
+        "It depends on your specific situation. Our team will need to inspect your existing countertops and evaluate the structural integrity, condition, and proper fit before determining if this is possible. After the assessment, we'll recommend the best approach for your countertop upgrade—whether that means installing over your current surface or removing it first. Our goal is to ensure a seamless, long-lasting result.",
+    },
+    {
+      question: "What maintenance is required for granite and quartz countertops?",
+      answer:
+        "Granite countertops should be resealed every 1-2 years to maintain their protective barrier against stains. Quartz countertops are lower maintenance—simply clean them regularly with mild soap and water to keep them looking pristine. Both materials are durable and easy to care for with these simple steps.",
+    },
+    {
+      question: "Do you offer custom edge profiles for countertops?",
+      answer:
+        "Absolutely. We offer a range of edge profiles. You can choose from bullnose, ogee, and bevel. Our team will help you choose the right profile that complements the style of your space, giving your countertop a polished and elegant finish.",
+    },
+    {
+      question: "What should I do to prepare for countertop installation?",
+      answer:
+        "If you're replacing existing countertops, please disconnect the plumbing beforehand so we can remove the old counters. We also recommend removing drawers and emptying cabinets, as the removal process can create dust and debris. If you're installing countertops on new cabinets, no preparation is needed—we'll handle everything from there.",
+    },
+    {
+      question: "How do I get a quote for my countertop project?",
+      answer:
+        "Simply give us a call or send us an email to get started. One of our experts will discuss your requirements, preferences, and budget with you. We'll provide a detailed and transparent quote for your countertop.",
+    },
+  ];
 
   return (
     <div className="flex flex-col">
@@ -279,6 +343,31 @@ export default function Home() {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="bg-white pt-0 py-16 border-gray-200">
+        <div className="max-w-5xl mx-auto px-6 md:px-10">
+          <h2 className="text-3xl font-semibold text-center mb-10 text-gray-900">
+            Frequently Asked Questions
+          </h2>
+
+          <div className="space-y-4">
+            {nycFaqs.map((faq, index) => (
+              <details
+                key={index}
+                className="border border-gray-200 overflow-hidden rounded-xl shadow-sm bg-white"
+              >
+                <summary className="cursor-pointer list-none w-full flex justify-between items-center bg-white p-5 text-left font-semibold text-lg text-gray-900 hover:bg-gray-50 transition">
+                  {faq.question}
+                </summary>
+                <div className="px-5 pb-3 pt-3 text-gray-700 text-base">
+                  {faq.answer}
+                </div>
+              </details>
+            ))}
           </div>
         </div>
       </section>
