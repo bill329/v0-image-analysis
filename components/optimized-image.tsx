@@ -42,7 +42,7 @@ export function OptimizedImage({
       width={width}
       height={height}
       className={className}
-      priority={priority}
+      // priority={priority}
       loading={loading}
       style={style}
       unoptimized={unoptimized}

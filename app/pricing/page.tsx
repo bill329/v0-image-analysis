@@ -118,6 +118,35 @@ function Rating({ value, max = 5 }: { value: number; max?: number }) {
   )
 }
 
+
+export const metadata = {
+  title: "Affordable Countertop Installation Pricing | Stone Concepts",
+  description:
+    "Discover clear pricing for granite and quartz countertop installation with Stone Concepts. Plan your kitchen project with real examples and expert service.",
+  keywords:
+    "stone concepts pricing, countertop costs, granite pricing, quartz countertop estimate, quartzite installation, kitchen remodel cost, Massachusetts",
+  openGraph: {
+    title: "Affordable Countertop Installation Pricing | Stone Concepts",
+    description:
+      "Discover clear pricing for granite and quartz countertop installation with Stone Concepts. Plan your kitchen project with real examples and expert service.",
+    url: "https://stoneconcepts.net/pricing",
+    type: "website",
+    locale: "en_US",
+    images: [
+      {
+        url: "https://stoneconcepts.net/images/fantasy-brown-kitchen-lexington.webp",
+        width: 1200,
+        height: 630,
+        alt: "Stone Concepts Pricing Page - Granite Countertop Example",
+      },
+    ],
+  },
+  robots: "index, follow",
+  alternates: {
+    canonical: "https://stoneconcepts.net/pricing",
+  },
+}
+
 export default function PricingPage() {
   // const [selectedMaterial, setSelectedMaterial] = useState("Level 2 Granite")
   // const [squareFootage, setSquareFootage] = useState(40)

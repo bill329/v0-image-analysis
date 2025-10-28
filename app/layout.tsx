@@ -1,5 +1,5 @@
 import type React from "react"
-import type { Metadata } from "next"
+import type { Metadata ,Viewport } from "next"
 import { Mona_Sans as FontSans } from "next/font/google"
 import { GoogleAnalytics } from "@next/third-parties/google"
 import "./globals.css"
@@ -15,20 +15,56 @@ const fontSans = FontSans({
 
 // Update metadata with more image-friendly configurations
 export const metadata: Metadata = {
-  title: "Stone Concepts - Affordable Luxury Countertops",
+  title: "Granite & Quartz Countertops Installation | Stone Concepts",
   description:
-    "Get high-end countertops without the showroom markup. Expert guidance, precision layout previews, and quality installation.",
+    "Upgrade your kitchen with affordable luxury granite and quartz countertops. Expert fabrication and installation across Massachusetts by Stone Concepts.",
   keywords: "countertops, granite, quartz, quartzite, kitchen remodel, stone installation, Massachusetts",
-  viewport: "width=device-width, initial-scale=1, viewport-fit=cover",
   robots: "index, follow",
   openGraph: {
-    title: "Stone Concepts - Affordable Luxury Countertops",
+    title: "Granite & Quartz Countertops Installation | Stone Concepts",
     description:
-      "Get high-end countertops without the showroom markup. Expert guidance, precision layout previews, and quality installation.",
+      "Upgrade your kitchen with affordable luxury granite and quartz countertops. Expert fabrication and installation across Massachusetts by Stone Concepts.",
     type: "website",
     locale: "en_US",
   },
-    generator: 'v0.app'
+  generator: 'v0.app'
+}
+
+// ✅ Export viewport separately (new Next.js 15 syntax)
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
+}
+
+// Organization schema (JSON-LD)
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Stone Concepts, Inc.",
+  "url": "https://www.stoneconcepts.net/",
+  "logo": "https://www.stoneconcepts.net/images/stone-concepts-logo.png",
+  "sameAs": [
+    "https://www.facebook.com/StoneConceptsGranite/",
+    "https://x.com/IncConcept22776",
+    "https://www.instagram.com/stoneconcepts_inc/"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+1-978-568-1911",
+    "contactType": "Customer Service",
+    "areaServed": "US",
+    "availableLanguage": ["English"]
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "10 Technology Dr, Unit 40",
+    "addressLocality": "Hudson",
+    "addressRegion": "MA",
+    "postalCode": "01749",
+    "addressCountry": "US"
+  },
+  "description": "Get high-end countertops without the showroom markup. Expert guidance, precision layout previews, and quality installation."
 }
 
 export default function RootLayout({
@@ -38,7 +74,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head>{/* No external lightbox libraries needed */}</head>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
+        {/* No external lightbox libraries needed */}
+      </head>
       <body className={cn("min-h-screen bg-background font-sans antialiased", fontSans.variable)}>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
           <div className="flex min-h-screen flex-col">
