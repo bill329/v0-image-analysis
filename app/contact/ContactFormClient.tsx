@@ -13,7 +13,9 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 import { Textarea } from "@/components/ui/textarea"
 import { useToast } from "@/hooks/use-toast"
 import { useRouter } from "next/navigation"
+import dynamic from "next/dynamic";
 
+const MapPage = dynamic(() => import("@/components/map"), { ssr: false });
 
 export default function ContactPage() {
   const { toast } = useToast()
@@ -306,6 +308,8 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
+
+      <MapPage />
 
       {/* Rest of page content... */}
       {/* CTA Section */}

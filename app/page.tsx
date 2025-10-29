@@ -6,6 +6,9 @@ import { OptimizedImage } from "@/components/optimized-image"
 import { ArrowRight, X, Maximize2 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import FaqComponent from "@/components/faqComponent"
+import dynamic from "next/dynamic";
+
+const MapPage = dynamic(() => import("@/components/map"), { ssr: false });
 
 interface FAQ {
   question: string;
@@ -371,6 +374,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Map section */}
+      <MapPage/>
 
       {/* CTA Section */}
       <section className="bg-gray-900 py-16 sm:py-24">
