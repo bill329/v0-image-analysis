@@ -23,7 +23,7 @@ export default function AboutPage() {
   return (
     <div className="flex flex-col">
       {/* Hero Section with Parallax */}
-      <section ref={heroRef} className="relative overflow-hidden bg-gray-900 py-24 sm:py-32">
+      <section ref={heroRef} className="relative overflow-hidden bg-red-500 py-24 sm:py-32">
         <div
           className="absolute inset-0 opacity-60"
           style={{
