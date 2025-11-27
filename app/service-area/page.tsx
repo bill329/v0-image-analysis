@@ -3,6 +3,18 @@ import Link from "next/link"
 import { ArrowRight, MapPin, Phone, Mail } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import type { Metadata } from "next"
+
+
+// ✅ SEO Metadata for Service Area page
+export const metadata: Metadata = {
+  title: "Granite & Quartz Countertop Services Near Me | Stone Concepts",
+  description:
+    "Stone Concepts proudly serves over 140 communities across Eastern and Central Massachusetts with expert granite and quartz countertop fabrication and installation.",
+  alternates: {
+    canonical: "https://www.stoneconcepts.net/service-area",
+  },
+}
 
 // Service area towns organized alphabetically
 const serviceAreaTowns = [
