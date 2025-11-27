@@ -181,7 +181,7 @@ export default function PricingPage() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="relative bg-gray-900 py-24 sm:py-32">
+      <section className="relative bg-gray-900 py-24 sm:py-32 test-check">
         <div className="absolute inset-0 opacity-60">
           <Image
             src="/images/fantasy-brown-kitchen-lexington.webp"
