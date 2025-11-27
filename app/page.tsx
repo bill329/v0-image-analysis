@@ -97,7 +97,7 @@ export default function Home() {
           <div className="absolute inset-0 bg-black/40" />
         </div>
         <div className="relative flex h-full items-center">
-          <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
+          <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8 testing">
             <div className="max-w-4xl text-white">
               <h1 className="text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl xl:text-6xl sm:whitespace-nowrap whitespace-normal">
                 Countertops You'll Love - Our Promise
