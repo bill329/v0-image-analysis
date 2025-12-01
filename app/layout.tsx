@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   },
   metadataBase: new URL("https://www.stoneconcepts.net"),
   alternates: {
-    canonical: "/", // root; Next.js auto-resolves for each page
+    canonical: "https://www.stoneconcepts.net/",
   },
   generator: "v0.app",
 };
