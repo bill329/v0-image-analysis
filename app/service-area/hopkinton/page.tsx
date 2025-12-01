@@ -1,5 +1,15 @@
 import Image from "next/image"
 import FaqComponent from "@/components/faqComponent"
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Granite & Quartz Countertop Services Near Me | Stone Concepts",
+  description:
+    "Stone Concepts proudly serves over 140 communities across Eastern and Central Massachusetts with expert granite and quartz countertop fabrication and installation.",
+  alternates: {
+    canonical: "https://www.stoneconcepts.net/service-area/hopkinton",
+  },
+}
 
 const blogs = [
     {
@@ -66,8 +76,8 @@ export default function ServiceAreaPage() {
                     />
                 </div>
                 <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
-                    <div className="mx-auto max-w-2xl text-center text-white">
-                        <h1 className="text-4xl font-bold tracking-tight sm:text-6xl">Stone Concepts WPC (Hopkinton, MA)</h1>
+                    <div className="mx-auto max-w-5xl text-center text-white">
+                        <h1 className="text-4xl font-bold tracking-tight sm:text-6xl">Your Home Deserves More Than "Builder Grade"</h1>
                     </div>
                 </div>
             </section>

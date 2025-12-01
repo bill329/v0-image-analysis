@@ -1,10 +1,9 @@
-import Image from "next/image"
-import Link from "next/link"
-import { ArrowRight, MapPin, Phone, Mail } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import type { Metadata } from "next"
-
+import Image from "next/image";
+import Link from "next/link";
+import { ArrowRight, MapPin, Phone, Mail } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import type { Metadata } from "next";
 
 // ✅ SEO Metadata for Service Area page
 export const metadata: Metadata = {
@@ -14,7 +13,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.stoneconcepts.net/service-area",
   },
-}
+};
 
 // Service area towns organized alphabetically
 const serviceAreaTowns = [
@@ -146,16 +145,24 @@ const serviceAreaTowns = [
   "Woburn",
   "Worcester",
   "Wrentham",
-]
+];
+
+// Bold + Link towns list
+const specialTownLinks: Record<string, string> = {
+  Bolton: "/service-area/bolton",
+  Berlin: "/service-area/berlin",
+  Hopkinton: "/service-area/hopkinton",
+  Northborough: "/service-area/northborough",
+};
 
 // Organize towns into columns for better display
-const townsPerColumn = Math.ceil(serviceAreaTowns.length / 4)
+const townsPerColumn = Math.ceil(serviceAreaTowns.length / 4);
 const townColumns = [
   serviceAreaTowns.slice(0, townsPerColumn),
   serviceAreaTowns.slice(townsPerColumn, townsPerColumn * 2),
   serviceAreaTowns.slice(townsPerColumn * 2, townsPerColumn * 3),
   serviceAreaTowns.slice(townsPerColumn * 3),
-]
+];
 
 export default function ServiceAreaPage() {
   return (
@@ -175,10 +182,12 @@ export default function ServiceAreaPage() {
         </div>
         <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center text-white">
-            <h1 className="text-4xl font-bold tracking-tight sm:text-6xl">Our Service Area</h1>
+            <h1 className="text-4xl font-bold tracking-tight sm:text-6xl">
+              Our Service Area
+            </h1>
             <p className="mt-6 text-lg leading-8">
-              Proudly serving Eastern and Central Massachusetts with premium countertop installation and expert
-              guidance.
+              Proudly serving Eastern and Central Massachusetts with premium
+              countertop installation and expert guidance.
             </p>
           </div>
         </div>
@@ -188,10 +197,12 @@ export default function ServiceAreaPage() {
       <section className="bg-white py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center mb-16">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Where We Serve</h2>
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+              Where We Serve
+            </h2>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              Our service area covers a wide region across Massachusetts. The red outline on the map below shows our
-              primary service area.
+              Our service area covers a wide region across Massachusetts. The
+              red outline on the map below shows our primary service area.
             </p>
           </div>
 
@@ -208,11 +219,15 @@ export default function ServiceAreaPage() {
               <div className="p-6 bg-gray-50">
                 <div className="flex items-center gap-2 mb-2">
                   <MapPin className="h-5 w-5 text-red-600" />
-                  <h3 className="text-lg font-semibold text-gray-900">Service Area Coverage</h3>
+                  <h3 className="text-lg font-semibold text-gray-900">
+                    Service Area Coverage
+                  </h3>
                 </div>
                 <p className="text-gray-600">
-                  The red border indicates our primary service area covering Eastern and Central Massachusetts. We serve
-                  over 140 communities in this region with professional countertop installation services.
+                  The red border indicates our primary service area covering
+                  Eastern and Central Massachusetts. We serve over 140
+                  communities in this region with professional countertop
+                  installation services.
                 </p>
               </div>
             </div>
@@ -224,26 +239,47 @@ export default function ServiceAreaPage() {
       <section className="bg-gray-50 py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center mb-16">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Communities We Serve</h2>
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+              Communities We Serve
+            </h2>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              We proudly serve the following {serviceAreaTowns.length} communities across Massachusetts:
+              We proudly serve the following {serviceAreaTowns.length}{" "}
+              communities across Massachusetts:
             </p>
           </div>
 
           <div className="mx-auto max-w-6xl">
             <Card>
               <CardHeader>
-                <CardTitle className="text-center">Service Area Towns (Alphabetical)</CardTitle>
+                <CardTitle className="text-center">
+                  Service Area Towns (Alphabetical)
+                </CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                   {townColumns.map((column, columnIndex) => (
                     <div key={columnIndex} className="space-y-1">
-                      {column.map((town) => (
-                        <div key={town} className="text-sm text-gray-700 py-1">
-                          {town}
-                        </div>
-                      ))}
+                      {column.map((town) => {
+                        const isSpecial =
+                          Object.keys(specialTownLinks).includes(town);
+                        return (
+                          <div
+                            key={town}
+                            className="text-sm text-gray-700 py-1"
+                          >
+                            {isSpecial ? (
+                              <Link
+                                href={specialTownLinks[town]}
+                                className="font-bold hover:underline"
+                              >
+                                {town}
+                              </Link>
+                            ) : (
+                              town
+                            )}
+                          </div>
+                        );
+                      })}
                     </div>
                   ))}
                 </div>
@@ -257,9 +293,12 @@ export default function ServiceAreaPage() {
       <section className="bg-white py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center mb-16">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Ready to Get Started?</h2>
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+              Ready to Get Started?
+            </h2>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              Contact us today to discuss your countertop project. We're here to help you every step of the way.
+              Contact us today to discuss your countertop project. We're here to
+              help you every step of the way.
             </p>
           </div>
 
@@ -278,7 +317,9 @@ export default function ServiceAreaPage() {
                 >
                   (978) 568-1911
                 </a>
-                <p className="mt-2 text-gray-600">Available Monday - Friday, 8:00 AM - 5:00 PM</p>
+                <p className="mt-2 text-gray-600">
+                  Available Monday - Friday, 8:00 AM - 5:00 PM
+                </p>
               </CardContent>
             </Card>
 
@@ -296,7 +337,9 @@ export default function ServiceAreaPage() {
                 >
                   bill@stoneconcepts.net
                 </a>
-                <p className="mt-2 text-gray-600">We typically respond within 24 hours</p>
+                <p className="mt-2 text-gray-600">
+                  We typically respond within 24 hours
+                </p>
               </CardContent>
             </Card>
           </div>
@@ -307,10 +350,12 @@ export default function ServiceAreaPage() {
       <section className="bg-gray-900 py-16 sm:py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
-            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">Don't See Your Town Listed?</h2>
+            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+              Don't See Your Town Listed?
+            </h2>
             <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-300">
-              We may still be able to serve your area. Contact us to discuss your project and we'll let you know if we
-              can help.
+              We may still be able to serve your area. Contact us to discuss
+              your project and we'll let you know if we can help.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <Button asChild size="lg" className="group">
@@ -319,7 +364,12 @@ export default function ServiceAreaPage() {
                   <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </Link>
               </Button>
-              <Button asChild variant="outline" size="lg" className="group bg-transparent text-white hover:bg-white/10">
+              <Button
+                asChild
+                variant="outline"
+                size="lg"
+                className="group bg-transparent text-white hover:bg-white/10"
+              >
                 <Link href="/gallery">
                   View Our Work
                   <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
@@ -330,5 +380,5 @@ export default function ServiceAreaPage() {
         </div>
       </section>
     </div>
-  )
+  );
 }
