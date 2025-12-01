@@ -71,7 +71,7 @@ export default function ServiceAreaPage() {
                 </div>
                 <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
                     <div className="mx-auto max-w-2xl text-center text-white">
-                        <h1 className="text-4xl font-bold tracking-tight sm:text-6xl">Stone Concepts WPC (Bolton, MA)</h1>
+                        <h1 className="text-4xl font-bold tracking-tight sm:text-6xl">The Countertops That Finally Match Your Standards</h1>
                     </div>
                 </div>
             </section>
