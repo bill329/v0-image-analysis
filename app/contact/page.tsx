@@ -9,12 +9,12 @@ export const metadata = {
     title: "Contact Stone Concepts | Affordable Luxury Countertops",
     description:
       "Learn about Stone Concepts, a trusted provider of granite and quartz countertop installations in Massachusetts. Committed to quality and customer satisfaction.",
-    url: "https://stoneconcepts.net/contact",
+    url: "https://www.stoneconcepts.net/contact",
     type: "website",
   },
   robots: "index, follow",
   alternates: {
-    canonical: "https://stoneconcepts.net/contact",
+    canonical: "https://www.stoneconcepts.net/contact",
   },
 }
 

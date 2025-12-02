@@ -91,9 +91,6 @@ export default function ServiceAreaPage() {
 
                             {/* Left Content */}
                             <div className="md:w-1/2 space-y-6">
-                                <h1 className="text-3xl md:text-4xl font-bold text-gray-800">
-                                    Your Berlin Kitchen Deserves Better Than "Good Enough"
-                                </h1>
                                 <p className="text-gray-600 leading-relaxed">
                                     You know the feeling. You're wiping down countertops that never quite look clean. The grout lines are permanently stained. That chip near the sink catches your eye every single morning. You've been meaning to upgrade for years, but the thought of navigating contractors, making the wrong stone choice, or living through a kitchen demolition kept you putting it off.
                                 </p>
