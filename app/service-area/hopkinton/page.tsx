@@ -89,9 +89,6 @@ export default function ServiceAreaPage() {
 
                             {/* Left Content */}
                             <div className="md:w-1/2 space-y-6">
-                                <h1 className="text-3xl md:text-4xl font-bold text-gray-800">
-                                    Your Home Deserves More Than "Builder Grade"
-                                </h1>
                                 <p className="text-gray-600 leading-relaxed">
                                     You've invested in your Hopkinton home. Fresh landscaping. Updated fixtures. Quality appliances. But every time you prep dinner or get ready in the morning, those countertops remind you there's unfinished business.
                                 </p>

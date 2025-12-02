@@ -94,9 +94,9 @@ export default function ServiceAreaPage() {
 
                             {/* Left Content */}
                             <div className="md:w-1/2 space-y-6">
-                                <h1 className="text-3xl md:text-4xl font-bold text-gray-800">
+                                {/* <h1 className="text-3xl md:text-4xl font-bold text-gray-800">
                                     The Countertops That Finally Match Your Standards
-                                </h1>
+                                </h1> */}
                                 <p className="text-gray-600 leading-relaxed">
                                     You've put years into making your Bolton home exactly what you want. Careful paint selections. Thoughtful furniture choices. Quality appliances that work the way they should.
                                 </p>

@@ -1,31 +1,20 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import Link from "next/link"
-import { OptimizedImage } from "@/components/optimized-image"
-import { ArrowRight, X, Maximize2 } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import FaqComponent from "@/components/faqComponent"
+import { useState } from "react";
+import Link from "next/link";
+import { OptimizedImage } from "@/components/optimized-image";
+import { ArrowRight, X, Maximize2 } from "lucide-react";
+import { Button } from "@/components/ui/button";
 import dynamic from "next/dynamic";
 
 const MapPage = dynamic(() => import("@/components/map"), { ssr: false });
 
-interface FAQ {
-  question: string;
-  answer: string;
-}
-
-interface FaqComponentProps {
-  nycFaqs?: FAQ[];
-}
-
-
 export default function Home() {
-  const [isChatExpanded, setIsChatExpanded] = useState(false)
+  const [isChatExpanded, setIsChatExpanded] = useState(false);
 
   const toggleChat = () => {
-    setIsChatExpanded(!isChatExpanded)
-  }
+    setIsChatExpanded(!isChatExpanded);
+  };
 
   const nycFaqs = [
     {
@@ -59,7 +48,8 @@ export default function Home() {
         "It depends on your specific situation. Our team will need to inspect your existing countertops and evaluate the structural integrity, condition, and proper fit before determining if this is possible. After the assessment, we'll recommend the best approach for your countertop upgrade—whether that means installing over your current surface or removing it first. Our goal is to ensure a seamless, long-lasting result.",
     },
     {
-      question: "What maintenance is required for granite and quartz countertops?",
+      question:
+        "What maintenance is required for granite and quartz countertops?",
       answer:
         "Granite countertops should be resealed every 1-2 years to maintain their protective barrier against stains. Quartz countertops are lower maintenance—simply clean them regularly with mild soap and water to keep them looking pristine. Both materials are durable and easy to care for with these simple steps.",
     },
@@ -80,8 +70,140 @@ export default function Home() {
     },
   ];
 
+  const schema = {
+    "@context": "https://schema.org",
+
+    "@type": "FAQPage",
+
+    mainEntity: [
+      {
+        "@type": "Question",
+
+        name: "What types of countertops do you offer?",
+
+        acceptedAnswer: {
+          "@type": "Answer",
+
+          text: "We offer granite, quartz, quartzite, marble, porcelain, and soapstone countertops. You can choose from a range of colors, patterns, and finishes. Looking for the best match for your kitchen or bathroom’s style becomes easier with our team’s expert support.",
+        },
+      },
+
+      {
+        "@type": "Question",
+
+        name: "How do I get started with my countertop project?",
+
+        acceptedAnswer: {
+          "@type": "Answer",
+
+          text: "Getting started is simple—just give us a call to schedule a free consultation. During this meeting, we'll discuss your design preferences and review material options that fit your style and budget. From there, we'll guide you through every step of the process, from selection to installation, ensuring a smooth experience from start to finish.",
+        },
+      },
+
+      {
+        "@type": "Question",
+
+        name: "Do you provide countertop installation services?",
+
+        acceptedAnswer: {
+          "@type": "Answer",
+
+          text: "Yes, we do. Stone Concepts offers professional countertop installation services throughout Massachusetts. Our experienced team specializes in precise cutting, fitting, and finishing to ensure your granite or quartz countertops are installed flawlessly. Whether it's your kitchen or bathroom, we deliver expert craftsmanship and a perfect fit every time.",
+        },
+      },
+
+      {
+        "@type": "Question",
+
+        name: "How long does the process take?",
+
+        acceptedAnswer: {
+          "@type": "Answer",
+
+          text: "The timeline varies depending on the size of your project, material selection, and complexity of the installation. On average, the entire process—from initial consultation and measurements through fabrication to final installation—takes 1-2 weeks. Regardless of your project's scope, we're committed to delivering a flawless finish that's worth the wait.",
+        },
+      },
+
+      {
+        "@type": "Question",
+
+        name: "Are your countertops sealed?",
+
+        acceptedAnswer: {
+          "@type": "Answer",
+
+          text: "Yes, we seal all natural stone countertops during installation to protect against stains. Quartz countertops, on the other hand, are non-porous and don't require sealing. To maintain the beauty and longevity of any countertop, we recommend regular cleaning and proper care.",
+        },
+      },
+
+      {
+        "@type": "Question",
+
+        name: "Can I install new countertops over my existing ones?",
+
+        acceptedAnswer: {
+          "@type": "Answer",
+
+          text: "It depends on your specific situation. Our team will need to inspect your existing countertops and evaluate the structural integrity, condition, and proper fit before determining if this is possible. After the assessment, we'll recommend the best approach for your countertop upgrade—whether that means installing over your current surface or removing it first. Our goal is to ensure a seamless, long-lasting result.",
+        },
+      },
+
+      {
+        "@type": "Question",
+
+        name: "What maintenance is required for granite and quartz countertops?",
+
+        acceptedAnswer: {
+          "@type": "Answer",
+
+          text: "Granite countertops should be resealed every 1-2 years to maintain their protective barrier against stains. Quartz countertops are lower maintenance—simply clean them regularly with mild soap and water to keep them looking pristine. Both materials are durable and easy to care for with these simple steps.",
+        },
+      },
+
+      {
+        "@type": "Question",
+
+        name: "Do you offer custom edge profiles for countertops?",
+
+        acceptedAnswer: {
+          "@type": "Answer",
+
+          text: "Absolutely. We offer a range of edge profiles. You can choose from bullnose, ogee, and bevel. Our team will help you choose the right profile that complements the style of your space, giving your countertop a polished and elegant finish.",
+        },
+      },
+
+      {
+        "@type": "Question",
+
+        name: "What should I do to prepare for countertop installation?",
+
+        acceptedAnswer: {
+          "@type": "Answer",
+
+          text: "If you're replacing existing countertops, please disconnect the plumbing beforehand so we can remove the old counters. We also recommend removing drawers and emptying cabinets, as the removal process can create dust and debris. If you're installing countertops on new cabinets, no preparation is needed—we'll handle everything from there.",
+        },
+      },
+
+      {
+        "@type": "Question",
+
+        name: "How do I get a quote for my countertop project?",
+
+        acceptedAnswer: {
+          "@type": "Answer",
+
+          text: "Simply give us a call or send us an email to get started. One of our experts will discuss your requirements, preferences, and budget with you. We'll provide a detailed and transparent quote for your countertop.",
+        },
+      },
+    ],
+  };
+
   return (
     <div className="flex flex-col">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
       {/* Hero Section */}
       <section className="relative h-[80vh] w-full">
         <div className="absolute inset-0">
@@ -103,7 +225,8 @@ export default function Home() {
                 Countertops You'll Love - Our Promise
               </h1>
               <p className="mt-6 text-base leading-7 font-medium sm:text-lg sm:leading-8 lg:text-xl">
-                30 years of experience. Thousands of happy clients. Now it's your turn.
+                30 years of experience. Thousands of happy clients. Now it's
+                your turn.
               </p>
               <div className="mt-10">
                 {/* Compact Chat Widget */}
@@ -114,7 +237,12 @@ export default function Home() {
                   >
                     <div className="flex items-center gap-1 mb-2">
                       <div className="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center">
-                        <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg
+                          className="w-3 h-3 text-white"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
                           <path
                             strokeLinecap="round"
                             strokeLinejoin="round"
@@ -124,14 +252,20 @@ export default function Home() {
                         </svg>
                       </div>
                       <div className="flex-1">
-                        <h3 className="font-semibold text-gray-900 text-sm">Ask Our AI Assistant</h3>
-                        <p className="text-xs text-gray-600">Get instant answers</p>
+                        <h3 className="font-semibold text-gray-900 text-sm">
+                          Ask Our AI Assistant
+                        </h3>
+                        <p className="text-xs text-gray-600">
+                          Get instant answers
+                        </p>
                       </div>
                       <Maximize2 className="w-4 h-4 text-gray-400" />
                     </div>
 
                     <div className="border border-gray-200 rounded-lg bg-gray-50 p-3">
-                      <p className="text-xs text-gray-600 text-center">Click to start chatting</p>
+                      <p className="text-xs text-gray-600 text-center">
+                        Click to start chatting
+                      </p>
                     </div>
 
                     <div className="mt-1 text-center">
@@ -146,7 +280,12 @@ export default function Home() {
                     <div className="flex items-center justify-between p-3 border-b border-gray-200">
                       <div className="flex items-center gap-2">
                         <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center">
-                          <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <svg
+                            className="w-4 h-4 text-white"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
                             <path
                               strokeLinecap="round"
                               strokeLinejoin="round"
@@ -156,11 +295,18 @@ export default function Home() {
                           </svg>
                         </div>
                         <div>
-                          <h3 className="font-semibold text-gray-900">Stone Concepts AI Assistant</h3>
-                          <p className="text-xs text-gray-600">Ask about materials, pricing, and more</p>
+                          <h3 className="font-semibold text-gray-900">
+                            Stone Concepts AI Assistant
+                          </h3>
+                          <p className="text-xs text-gray-600">
+                            Ask about materials, pricing, and more
+                          </p>
                         </div>
                       </div>
-                      <button onClick={toggleChat} className="p-1 hover:bg-gray-100 rounded-full transition-colors">
+                      <button
+                        onClick={toggleChat}
+                        className="p-1 hover:bg-gray-100 rounded-full transition-colors"
+                      >
                         <X className="w-5 h-5 text-gray-500" />
                       </button>
                     </div>
@@ -179,7 +325,9 @@ export default function Home() {
                     </div>
 
                     <div className="p-2 text-center border-t border-gray-200">
-                      <p className="text-xs text-gray-500">Powered by AI • Get instant answers</p>
+                      <p className="text-xs text-gray-500">
+                        Powered by AI • Get instant answers
+                      </p>
                     </div>
                   </div>
                 )}
@@ -194,7 +342,9 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl">
             {/* Replace prose with explicit spacing */}
-            <div style={{ maxWidth: "800px", margin: "0 auto", textAlign: "left" }}>
+            <div
+              style={{ maxWidth: "800px", margin: "0 auto", textAlign: "left" }}
+            >
               {/* Headline */}
               <h2
                 className="responsive-headline"
@@ -215,7 +365,14 @@ export default function Home() {
                 What If You Never Had to Feel This Confused?
               </h2>
               {/* Image */}
-              <div style={{ textAlign: "center", marginBottom: "2em", display: "flex", justifyContent: "center" }}>
+              <div
+                style={{
+                  textAlign: "center",
+                  marginBottom: "2em",
+                  display: "flex",
+                  justifyContent: "center",
+                }}
+              >
                 <OptimizedImage
                   src="/images/countertop-customer.webp"
                   alt="Confused customer overwhelmed by too many stone options in showroom"
@@ -231,10 +388,14 @@ export default function Home() {
               {/* Story */}
               <p>
                 <strong>
-                  You've been dreaming of your new kitchen for months. This should feel exciting, not terrifying.
+                  You've been dreaming of your new kitchen for months. This
+                  should feel exciting, not terrifying.
                 </strong>
               </p>
-              <p>But here you are — overwhelmed, confused, and expected to make a $10,000 decision.</p>
+              <p>
+                But here you are — overwhelmed, confused, and expected to make a
+                $10,000 decision.
+              </p>
               <p style={{ marginTop: "2em" }}>
                 <strong>There's a better way.</strong>
               </p>
@@ -252,18 +413,27 @@ export default function Home() {
                 <strong>Stone Concepts provides - </strong>
               </p>
               <p>
-                A countertop preview that eliminates confusion. You'll see your kitchen come to life before we fabricate
-                anything.
+                A countertop preview that eliminates confusion. You'll see your
+                kitchen come to life before we fabricate anything.
               </p>
               <p style={{ marginTop: "1.5em" }}>
                 <strong>You deserve certainty, not chaos.</strong>
               </p>
 
               {/* Bottom CTA */}
-              <h3 style={{ marginTop: "2em", fontWeight: 600 }}>Avoid mistakes and guesswork</h3>
+              <h3 style={{ marginTop: "2em", fontWeight: 600 }}>
+                Avoid mistakes and guesswork
+              </h3>
               <p>Let's walk through your options — together.</p>
 
-              <div style={{ backgroundColor: "#e6ffec", padding: "20px", borderRadius: "6px", marginTop: "20px" }}>
+              <div
+                style={{
+                  backgroundColor: "#e6ffec",
+                  padding: "20px",
+                  borderRadius: "6px",
+                  marginTop: "20px",
+                }}
+              >
                 <strong>✔️ Request a Free Quote Today</strong>
                 <br />
                 <Link
@@ -281,9 +451,15 @@ export default function Home() {
                 >
                   Get My Free Quote
                 </Link>
-                <p style={{ fontSize: "0.9rem", color: "#555", marginTop: "0.5em" }}>
-                  We'll help you compare materials, estimate costs, and find the perfect slab — all with expert guidance
-                  and zero pressure.
+                <p
+                  style={{
+                    fontSize: "0.9rem",
+                    color: "#555",
+                    marginTop: "0.5em",
+                  }}
+                >
+                  We'll help you compare materials, estimate costs, and find the
+                  perfect slab — all with expert guidance and zero pressure.
                   <br />
                   <strong>Spots are limited — hold your quote today.</strong>
                 </p>
@@ -300,38 +476,60 @@ export default function Home() {
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl text-center">
               What It's Like to Work With Stone Concepts
             </h2>
-            <p className="text-lg italic text-gray-600 text-center mt-4">Real clients. Real results.</p>
+            <p className="text-lg italic text-gray-600 text-center mt-4">
+              Real clients. Real results.
+            </p>
 
             <div className="mt-16 space-y-8">
               <blockquote className="border-l-4 border-gray-300 pl-6 text-lg italic text-gray-700">
-                <p>"Bill helped me through the most overwhelming part — picking the stone."</p>
+                <p>
+                  "Bill helped me through the most overwhelming part — picking
+                  the stone."
+                </p>
                 <p>He knew what I needed even before I did."</p>
-                <footer className="mt-2 text-sm font-medium text-gray-500">— Tiziana</footer>
+                <footer className="mt-2 text-sm font-medium text-gray-500">
+                  — Tiziana
+                </footer>
               </blockquote>
 
               <blockquote className="border-l-4 border-gray-300 pl-6 text-lg italic text-gray-700">
                 <p>"The workmanship was flawless. The step-by-step support?"</p>
                 <p>Better than any vendor we contacted."</p>
-                <footer className="mt-2 text-sm font-medium text-gray-500">— C. Caunt</footer>
+                <footer className="mt-2 text-sm font-medium text-gray-500">
+                  — C. Caunt
+                </footer>
               </blockquote>
 
               <blockquote className="border-l-4 border-gray-300 pl-6 text-lg italic text-gray-700">
-                <p>"I didn't want to put anything on my new counters — they're that stunning."</p>
+                <p>
+                  "I didn't want to put anything on my new counters — they're
+                  that stunning."
+                </p>
                 <p>And they saved me 30% over my local quotes."</p>
-                <footer className="mt-2 text-sm font-medium text-gray-500">— Fran O., Barre, VT</footer>
+                <footer className="mt-2 text-sm font-medium text-gray-500">
+                  — Fran O., Barre, VT
+                </footer>
               </blockquote>
 
               <blockquote className="border-l-4 border-gray-300 pl-6 text-lg italic text-gray-700">
-                <p>"Bill helped us understand what fit our budget and walked us through the whole process."</p>
+                <p>
+                  "Bill helped us understand what fit our budget and walked us
+                  through the whole process."
+                </p>
                 <p>It couldn't have been smoother."</p>
-                <footer className="mt-2 text-sm font-medium text-gray-500">— Jenna S.</footer>
+                <footer className="mt-2 text-sm font-medium text-gray-500">
+                  — Jenna S.
+                </footer>
               </blockquote>
             </div>
 
             <div className="mt-12 text-center">
-              <p className="text-xl font-bold text-gray-800 mb-6">Want your story to be this good?</p>
+              <p className="text-xl font-bold text-gray-800 mb-6">
+                Want your story to be this good?
+              </p>
               <p className="text-lg text-gray-600 mb-8">
-                Let's make your countertop experience simple, beautiful, and stress-free.
+                Let's make your countertop experience simple, beautiful, and
+                stress-free.
               </p>
 
               <div className="bg-green-50 border border-green-200 rounded-lg p-6 inline-block">
@@ -376,15 +574,18 @@ export default function Home() {
       </section>
 
       {/* Map section */}
-      <MapPage/>
+      <MapPage />
 
       {/* CTA Section */}
       <section className="bg-gray-900 py-16 sm:py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
-            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">Ready to transform your space?</h2>
+            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+              Ready to transform your space?
+            </h2>
             <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-300">
-              Contact us today to schedule a consultation and get started on your custom countertop project.
+              Contact us today to schedule a consultation and get started on
+              your custom countertop project.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <Button asChild size="lg" className="group">
@@ -398,5 +599,5 @@ export default function Home() {
         </div>
       </section>
     </div>
-  )
+  );
 }

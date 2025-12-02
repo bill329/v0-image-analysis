@@ -89,9 +89,6 @@ export default function ServiceAreaPage() {
 
                             {/* Left Content */}
                             <div className="md:w-1/2 space-y-6">
-                                <h1 className="text-3xl md:text-4xl font-bold text-gray-800">
-                                    The Kitchen That Finally Matches Your Home
-                                </h1>
                                 <p className="text-gray-600 leading-relaxed">
                                     You've upgraded everything else. New appliances. Fresh paint. Updated lighting.
                                     But every time you walk into your kitchen, those countertops remind you there's still work to do.
