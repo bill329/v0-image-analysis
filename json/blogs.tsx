@@ -398,3 +398,27 @@ export const blogs = [
     ),
   },
 ];
+export const blogsMinimalData = [
+  {
+    id: 1,
+    title:
+      "Granite vs. Quartz Countertops: Which is Best for Your Kitchen Remodel?",
+    image: "/images/blog-1.png",
+    date: "Nov 28, 2024",
+    category: "Kitchen Design",
+    readTime: "8 min read",
+    excerpt:
+      "Discover the key differences between granite and quartz countertops to make the perfect choice for your kitchen renovation project.",
+  },
+  {
+    id: 2,
+    title:
+      "Marble vs Granite Countertop Installation: Which Is Right for Your Kitchen?",
+    image: "/images/blog-2.png",
+    date: "Nov 25, 2024",
+    category: "Installation Guide",
+    readTime: "12 min read",
+    excerpt:
+      "Learn how to choose between marble and granite based on your lifestyle, maintenance preferences, and design goals.",
+  },
+];

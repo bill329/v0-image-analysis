@@ -28,7 +28,7 @@ const Blogs = () => {
           kitchen.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 place-items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 justify-center place-items-center">
           {blogs.map((blog) => (
             <BlogCard
               key={blog.id}
