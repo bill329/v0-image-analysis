@@ -7,7 +7,6 @@ import { ArrowRight, X, Maximize2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import dynamic from "next/dynamic";
 import BlogShowcaseSection from "@/components/blog/BlogShowcaseSection";
-import { Metadata } from "next";
 
 const MapPage = dynamic(() => import("@/components/map"), { ssr: false });
 
