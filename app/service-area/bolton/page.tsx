@@ -3,9 +3,9 @@ import FaqComponent from "@/components/faqComponent";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Granite & Quartz Countertop Services Near Me | Stone Concepts",
+  title: "Granite, Quartz & Stone Countertops Bolton MA | Stone Concepts",
   description:
-    "Stone Concepts proudly serves over 140 communities across Eastern and Central Massachusetts with expert granite and quartz countertop fabrication and installation.",
+    "Premium granite, quartz & stone countertops in Bolton, MA. Expert fabrication and installation without showroom markup. Free consultation: (978) 568-1911",
   alternates: {
     canonical: "https://www.stoneconcepts.net/service-area/bolton",
   },
