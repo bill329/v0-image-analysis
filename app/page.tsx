@@ -6,8 +6,12 @@ import { OptimizedImage } from "@/components/optimized-image";
 import { ArrowRight, X, Maximize2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import dynamic from "next/dynamic";
+import BlogShowcaseSection from "@/components/blog/BlogShowcaseSection";
 
 const MapPage = dynamic(() => import("@/components/map"), { ssr: false });
+
+
+
 
 export default function Home() {
   const [isChatExpanded, setIsChatExpanded] = useState(false);
@@ -468,6 +472,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+      
+      {/* Blog Showcase Section */}
+      <BlogShowcaseSection />
 
       {/* Testimonials Preview */}
       <section className="bg-white py-24 sm:py-32">

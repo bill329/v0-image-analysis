@@ -15,16 +15,16 @@ const fontSans = FontSans({
 
 // Update metadata with more image-friendly configurations
 export const metadata: Metadata = {
-  title: "Granite & Quartz Countertops Installation | Stone Concepts",
+  title: "Granite & Quartz Countertops | Affordable Luxury | Stone Concepts",
   description:
-    "Upgrade your kitchen with affordable luxury granite and quartz countertops. Expert fabrication and installation across Massachusetts by Stone Concepts.",
+    "Premium countertops without showroom markup. Expert granite, quartz & marble installation in Massachusetts. Free consultation: (978) 568-1911. Transform your kitchen today.",
   keywords:
     "countertops, granite, quartz, quartzite, kitchen remodel, stone installation, Massachusetts",
   robots: "index, follow",
   openGraph: {
-    title: "Granite & Quartz Countertops Installation | Stone Concepts",
+    title: "Granite & Quartz Countertops | Affordable Luxury | Stone Concepts",
     description:
-      "Upgrade your kitchen with affordable luxury granite and quartz countertops. Expert fabrication and installation across Massachusetts by Stone Concepts.",
+      "Premium countertops without showroom markup. Expert granite, quartz & marble installation in Massachusetts. Free consultation: (978) 568-1911. Transform your kitchen today.",
     type: "website",
     locale: "en_US",
   },

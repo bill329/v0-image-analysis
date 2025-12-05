@@ -11,6 +11,8 @@ const navigation = [
   { name: "Home", href: "/" },
   { name: "Gallery", href: "/gallery" },
   { name: "Testimonials", href: "/testimonials" },
+  { name: "Blogs", href: "/blogs" },
+  { name: "Service Area", href: "/service-area" },
   { name: "About", href: "/about" },
   { name: "Pricing", href: "/pricing" },
 ];
@@ -74,7 +76,7 @@ export function Header() {
           ))}
 
           {/* Desktop Dropdown */}
-          <div className="relative group">
+          {/* <div className="relative group">
             <Link
               href="/service-area"
               className="flex items-center gap-1 text-sm font-semibold text-gray-900 hover:text-gray-600"
@@ -95,7 +97,7 @@ export function Header() {
                 </Link>
               ))}
             </div>
-          </div>
+          </div> */}
 
           <Link
             href="/contact"

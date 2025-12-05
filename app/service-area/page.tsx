@@ -15,6 +15,8 @@ export const metadata: Metadata = {
   },
 };
 
+
+
 // Service area towns organized alphabetically
 const serviceAreaTowns = [
   "Acton",
