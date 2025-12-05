@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image"
 import Link from "next/link"
 import { ArrowRight, Shield, Flame, Droplets, Wrench, Eye, Check } from "lucide-react"
@@ -117,35 +118,6 @@ function Rating({ value, max = 5 }: { value: number; max?: number }) {
   )
 }
 
-
-export const metadata = {
-  title: "Affordable Countertop Installation Pricing | Stone Concepts",
-  description:
-    "Discover clear pricing for granite and quartz countertop installation with Stone Concepts. Plan your kitchen project with real examples and expert service.",
-  keywords:
-    "stone concepts pricing, countertop costs, granite pricing, quartz countertop estimate, quartzite installation, kitchen remodel cost, Massachusetts",
-  openGraph: {
-    title: "Affordable Countertop Installation Pricing | Stone Concepts",
-    description:
-      "Discover clear pricing for granite and quartz countertop installation with Stone Concepts. Plan your kitchen project with real examples and expert service.",
-    url: "https://stoneconcepts.net/pricing",
-    type: "website",
-    locale: "en_US",
-    images: [
-      {
-        url: "https://stoneconcepts.net/images/fantasy-brown-kitchen-lexington.webp",
-        width: 1200,
-        height: 630,
-        alt: "Stone Concepts Pricing Page - Granite Countertop Example",
-      },
-    ],
-  },
-  robots: "index, follow",
-  alternates: {
-    canonical: "https://stoneconcepts.net/pricing",
-  },
-}
-
 export default function PricingPage() {
   // const [selectedMaterial, setSelectedMaterial] = useState("Level 2 Granite")
   // const [squareFootage, setSquareFootage] = useState(40)
@@ -181,7 +153,7 @@ export default function PricingPage() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="relative bg-gray-900 py-24 sm:py-32 test-check">
+      <section className="relative bg-gray-900 py-24 sm:py-32">
         <div className="absolute inset-0 opacity-60">
           <Image
             src="/images/fantasy-brown-kitchen-lexington.webp"
@@ -195,9 +167,7 @@ export default function PricingPage() {
         </div>
         <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center text-white">
-            <h1 className="text-4xl font-bold tracking-tight sm:text-6xl">
-              Get Your Dream Kitchen Without the Showroom Stress
-            </h1>
+            <h1 className="text-4xl font-bold tracking-tight sm:text-6xl">Get Your Dream Kitchen</h1>
             <p className="mt-6 text-xl leading-8">
               Explore material options, pricing ranges, and real project examples—so you can plan with confidence.
             </p>
@@ -316,7 +286,7 @@ export default function PricingPage() {
               <div className="px-6 pb-6">
                 <div className="bg-gray-50 rounded-lg p-4 border">
                   <img
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-06-30%20at%2012.19.23%E2%80%AFPM-4DTWDzivbOKcenY8TkVotzgXoyHrjD.png"
+                    src="/images/screenshot-202025-06-30-20at-2012.png"
                     alt="Kitchen layout drawing showing 62.8 sq ft of countertops with dimensions and sink cutouts"
                     className="w-full h-auto"
                   />
