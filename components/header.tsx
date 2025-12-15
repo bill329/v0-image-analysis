@@ -46,7 +46,7 @@ export function Header() {
               priority
               unoptimized
             />
-            <div className="ml-2 sm:ml-3 text-lg sm:text-2xl font-semibold tracking-tight hidden sm:block">
+            <div className="ml-2 sm:ml-3 text-lg sm:text-2xl font-semibold tracking-tight hidden sm:block font-['Georgia_Pro']">
               Stone Concepts, Inc.
             </div>
           </Link>
