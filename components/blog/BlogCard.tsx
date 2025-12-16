@@ -1,21 +1,22 @@
 import { ArrowRight, Calendar } from "lucide-react";
+import Link from "next/link";
 
 const BlogCard = ({
   title,
   image,
   date,
   category,
-  onClick,
+  slug,
 }: {
   title: string;
   image: string;
   date: string;
   category: string;
-  onClick: () => void;
+  slug: string;
 }) => {
   return (
-    <div
-      onClick={onClick}
+    <Link
+      href={`/blogs/${slug}`}
       className="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 max-w-sm cursor-pointer"
     >
       <div className="p-6 pb-4">
@@ -47,7 +48,7 @@ const BlogCard = ({
           <ArrowRight className="w-4 h-4" />
         </button>
       </div>
-    </div>
+    </Link>
   );
 };
 

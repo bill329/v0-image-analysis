@@ -1,20 +1,18 @@
-"use client";
+
 import BlogCard from "@/components/blog/BlogCard";
-import BlogDetail from "@/components/blog/BlogDetail";
 import { blogs } from "@/json/blogs";
-import React, { useState } from "react";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Kitchen Countertop Blog | Granite, Quartz & Marble Guides | Stone Concepts",
+  description:
+    "Expert granite, quartz & marble countertop installation in Berlin, MA. Custom fabrication, quality craftsmanship. Serving Eastern MA. Free consultation: +1(978) 568-1911",
+  alternates: {
+    canonical: "https://www.stoneconcepts.net/blogs",
+  },
+};
 
 const Blogs = () => {
-  const [selectedBlog, setSelectedBlog] = useState<null | (typeof blogs)[0]>(
-    null
-  );
-
-  if (selectedBlog) {
-    return (
-      <BlogDetail blog={selectedBlog} onBack={() => setSelectedBlog(null)} />
-    );
-  }
-
   return (
     <div className="min-h-screen from-gray-50 to-gray-100 p-8">
       <div className="max-w-6xl mx-auto">
@@ -33,7 +31,6 @@ const Blogs = () => {
             <BlogCard
               key={blog.id}
               {...blog}
-              onClick={() => setSelectedBlog(blog)}
             />
           ))}
         </div>

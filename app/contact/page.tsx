@@ -2,7 +2,7 @@
 export const metadata = {
   title: "Contact Stone Concepts | Affordable Luxury Countertops",
   description:
-    "Learn about Stone Concepts, a trusted provider of granite and quartz countertop installations in Massachusetts. Committed to quality and customer satisfaction.",
+    "Get in touch with Stone Concepts for premium granite and quartz countertop installations in Massachusetts. Call +1(978) 568-1911 or request a quote online.",
   keywords:
     "contact stone concepts, countertop quote, stone installation, granite countertops, quartz, Massachusetts",
   openGraph: {

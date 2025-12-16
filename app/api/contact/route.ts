@@ -80,7 +80,7 @@ ${message}
     logger.error("Unhandled error in contact form API:", error)
     return NextResponse.json(
       {
-        error: "There was an error processing your request. Please try again or contact us directly at (978) 568-1911.",
+        error: "There was an error processing your request. Please try again or contact us directly at +1(978) 568-1911.",
       },
       { status: 500 },
     )

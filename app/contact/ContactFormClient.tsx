@@ -162,8 +162,8 @@ export default function ContactPage() {
                       </div>
                       <div>
                         <div className="font-medium">Phone</div>
-                        <a href="tel:9785681911" className="text-gray-600 hover:text-gray-900">
-                          (978) 568-1911
+                        <a href="tel:+19785681911" className="text-gray-600 hover:text-gray-900">
+                          +1(978) 568-1911
                         </a>
                       </div>
                     </div>
@@ -292,7 +292,7 @@ export default function ContactPage() {
                             <a href={generateMailtoLink()} className="font-medium underline hover:text-red-600">
                               email us directly
                             </a>{" "}
-                            or call (978) 568-1911.
+                            or call +1(978) 568-1911.
                           </p>
                         </div>
                       </div>

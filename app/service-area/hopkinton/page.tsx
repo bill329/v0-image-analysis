@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Granite, Quartz & Stone Countertops Hopkinton MA | Stone Concepts",
   description:
-    "Premium countertops in Hopkinton, MA. Expert granite, quartz & stone installation without showroom markup. Transform your space. Free consultation: (978) 568-1911",
+    "Premium countertops in Hopkinton, MA. Expert granite, quartz & stone installation without showroom markup. Transform your space. Free consultation: +1(978) 568-1911",
   alternates: {
     canonical: "https://www.stoneconcepts.net/service-area/hopkinton",
   },

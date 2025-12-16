@@ -7,12 +7,6 @@ import { Button } from "../ui/button";
 import Link from "next/link";
 
 export default function BlogShowcaseSection() {
-  const router = useRouter();
-
-  const handleBlogClick = () => {
-    router.push("/blogs");
-  };
-
   return (
     <section className="py-20 from-gray-50 via-white to-gray-50">
       <div className="max-w-7xl mx-auto px-6">
@@ -34,7 +28,7 @@ export default function BlogShowcaseSection() {
         {/* Blog Cards Grid */}
         <div className="flex flex-wrap justify-evenly gap-8 mb-12">
           {blogsMinimalData.map((blog) => (
-            <BlogCard key={blog.id} {...blog} onClick={handleBlogClick} />
+            <BlogCard key={blog.id} {...blog} />
           ))}
         </div>
 

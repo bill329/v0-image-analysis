@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Granite, Quartz & Marble Countertops Northborough MA | Stone Concepts",
   description:
-    "Premium granite, marble & quartz countertops in Northborough, MA. Expert fabrication and installation without showroom markup. Call (978) 568-1911 for free consultation.",
+    "Premium granite, marble & quartz countertops in Northborough, MA. Expert fabrication and installation without showroom markup. Call +1(978) 568-1911 for free consultation.",
   alternates: {
     canonical: "https://www.stoneconcepts.net/service-area/northborough",
   },
