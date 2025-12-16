@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Granite & Quartz Countertops Installation Berlin MA | Stone Concepts",
   description:
-    "Expert granite, quartz & marble countertop installation in Berlin, MA. Custom fabrication, quality craftsmanship. Serving Eastern MA. Free consultation: (978) 568-1911",
+    "Expert granite, quartz & marble countertop installation in Berlin, MA. Custom fabrication, quality craftsmanship. Serving Eastern MA. Free consultation: +1(978) 568-1911",
   alternates: {
     canonical: "https://www.stoneconcepts.net/service-area/berlin",
   },
@@ -207,7 +207,7 @@ export default function ServiceAreaPage() {
                 daily chaos of family life without showing wear.
               </p>
               <p className="text-gray-600 leading-relaxed mt-2">
-                When you choose granite countertops in Northborough through
+                When you choose granite countertops in Berlin through
                 Stone Concepts, you're not just buying slabs—you're getting a
                 proven process:
               </p>

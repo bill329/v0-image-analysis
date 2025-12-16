@@ -314,10 +314,10 @@ export default function ServiceAreaPage() {
               </CardHeader>
               <CardContent>
                 <a
-                  href="tel:9785681911"
+                  href="tel:+19785681911"
                   className="text-2xl font-bold text-gray-900 hover:text-gray-600 transition-colors"
                 >
-                  (978) 568-1911
+                  +1(978) 568-1911
                 </a>
                 <p className="mt-2 text-gray-600">
                   Available Monday - Friday, 8:00 AM - 5:00 PM

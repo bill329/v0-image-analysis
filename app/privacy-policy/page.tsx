@@ -202,7 +202,7 @@ const PrivacyPolicy = () => {
             <li><span className="font-medium">Company:</span> Stone Concepts, Inc.</li>
             <li><span className="font-medium">Address:</span> 10 Technology Dr, Hudson, MA 01749</li>
             <li><span className="font-medium">Email:</span> <a href="mailto:bill@stoneconcepts.net" className="text-sky-600 hover:underline">bill@stoneconcepts.net</a></li>
-            <li><span className="font-medium">Phone:</span> (978) 568-1911</li>
+            <li><span className="font-medium">Phone:</span> +1(978) 568-1911</li>
             <li><span className="font-medium">Website:</span> <a href="https://www.stoneconcepts.net" target="_blank" rel="noopener noreferrer" className="text-sky-600 hover:underline">www.stoneconcepts.net</a></li>
           </ul>
         </section>

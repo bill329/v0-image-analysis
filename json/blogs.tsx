@@ -3,6 +3,9 @@ export const blogs = [
     id: 1,
     title:
       "Granite vs. Quartz Countertops: Which is Best for Your Kitchen Remodel?",
+    seoTitle:
+      "Granite vs Quartz Countertops | Stone Concepts",
+    slug: "granite-vs-quartz-countertops",
     image: "/images/blog-1.png",
     date: "Nov 28, 2024",
     category: "Kitchen Design",
@@ -166,6 +169,9 @@ export const blogs = [
     id: 2,
     title:
       "Marble vs Granite Countertop Installation: Which Is Right for Your Kitchen?",
+    seoTitle:
+      "Marble vs Granite Countertop | Stone Concepts",
+    slug: "marble-vs-granite-countertop-installation",
     image: "/images/blog-2.png",
     date: "Nov 25, 2024",
     category: "Installation Guide",
@@ -390,7 +396,7 @@ export const blogs = [
           </p>
           <p className="text-gray-700">
             Visit the slab gallery. See full slabs, not samples. Touch the
-            surfaces. Ask questions. Call us at (978) 568-1911 or visit
+            surfaces. Ask questions. Call us at +1(978) 568-1911 or visit
             stoneconcepts.net to schedule your free consultation.
           </p>
         </div>
@@ -398,11 +404,13 @@ export const blogs = [
     ),
   },
 ];
+
 export const blogsMinimalData = [
   {
     id: 1,
     title:
       "Granite vs. Quartz Countertops: Which is Best for Your Kitchen Remodel?",
+    slug: "granite-vs-quartz-countertops",
     image: "/images/blog-1.png",
     date: "Nov 28, 2024",
     category: "Kitchen Design",
@@ -414,6 +422,7 @@ export const blogsMinimalData = [
     id: 2,
     title:
       "Marble vs Granite Countertop Installation: Which Is Right for Your Kitchen?",
+    slug: "marble-vs-granite-countertop-installation",
     image: "/images/blog-2.png",
     date: "Nov 25, 2024",
     category: "Installation Guide",

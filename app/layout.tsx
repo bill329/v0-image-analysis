@@ -21,6 +21,11 @@ export const metadata: Metadata = {
   keywords:
     "countertops, granite, quartz, quartzite, kitchen remodel, stone installation, Massachusetts",
   robots: "index, follow",
+  icons: {
+    icon: [{ url: "public/images/logo.png", type: "image/png" }],
+    shortcut: ["/images/logo.png"],
+    apple: ["/images/logo.png"],
+  },
   openGraph: {
     title: "Granite & Quartz Countertops | Affordable Luxury | Stone Concepts",
     description:

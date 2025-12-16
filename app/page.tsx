@@ -10,9 +10,6 @@ import BlogShowcaseSection from "@/components/blog/BlogShowcaseSection";
 
 const MapPage = dynamic(() => import("@/components/map"), { ssr: false });
 
-
-
-
 export default function Home() {
   const [isChatExpanded, setIsChatExpanded] = useState(false);
 

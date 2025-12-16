@@ -112,10 +112,10 @@ export function Header() {
           <div className="text-center">
             <div className="text-xs text-gray-500">Call or Text</div>
             <a
-              href="tel:9785681911"
+              href="tel:+19785681911"
               className="text-sm font-semibold text-gray-900 hover:text-gray-600"
             >
-              (978) 568-1911
+              +1(978) 568-1911
             </a>
           </div>
           <Button asChild size="sm">
@@ -219,11 +219,11 @@ export function Header() {
                     Call or Text
                   </div>
                   <a
-                    href="tel:9785681911"
+                    href="tel:+19785681911"
                     className="text-lg font-semibold leading-7 text-gray-900 block mt-1"
                     onClick={() => setMobileMenuOpen(false)}
                   >
-                    (978) 568-1911
+                    +1(978) 568-1911
                   </a>
                 </div>
                 <div className="px-3">

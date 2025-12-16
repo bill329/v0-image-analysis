@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Granite, Quartz & Stone Countertops Bolton MA | Stone Concepts",
   description:
-    "Premium granite, quartz & stone countertops in Bolton, MA. Expert fabrication and installation without showroom markup. Free consultation: (978) 568-1911",
+    "Premium granite, quartz & stone countertops in Bolton, MA. Expert fabrication and installation without showroom markup. Free consultation: +1(978) 568-1911",
   alternates: {
     canonical: "https://www.stoneconcepts.net/service-area/bolton",
   },
@@ -637,7 +637,7 @@ export default function ServiceAreaPage() {
           <div className=" mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
-                Why Northborough Homeowners Choose Stone Concepts
+                Why Bolton Homeowners Choose Stone Concepts
               </h2>
             </div>
             <h3 className="text-xl font-bold text-gray-800">
@@ -645,7 +645,7 @@ export default function ServiceAreaPage() {
             </h3>
             <p className="text-gray-600 leading-relaxed mt-2 mb-6">
               We're not new to this. We've been installing countertops in
-              Northborough, MA for years. We know the architectural styles. We
+              Bolton, MA for years. We know the architectural styles. We
               understand the layout challenges of older homes. We're familiar
               with local building requirements. That experience shows in every
               installation.
