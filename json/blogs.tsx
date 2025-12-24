@@ -403,6 +403,272 @@ export const blogs = [
       </>
     ),
   },
+  {
+    id: 3,
+    title:
+      "What to Actually Expect on Countertop Installation Day: An Hour-by-Hour Guide",
+    seoTitle:
+      "What to Actually Expect on Countertop Installation Day: An Hour-by-Hour Guide | Stone Concepts",
+    slug: "what-to-actually-expect-on-countertop-installation-day-an-hour-by-hour-guide",
+    image: "/images/Picture3.png",
+    date: "Dec 25, 2025",
+    category: "Installation Guide",
+    readTime: "12 min read",
+    content: (
+      <>
+        <p className="text-xl text-gray-700 leading-relaxed mb-6">
+          Last Tuesday, I got a panicked call from a homeowner in Bolton.
+        </p>
+
+        <p className="italic mb-6">
+          "Your installer is coming tomorrow, and I haven't done any of the prep
+          work yet! Should I be ripping out my sink? Do I need to move my stove?
+          Should I have hired someone to remove my old countertops?"
+        </p>
+
+        <p className="mb-6">
+          I laughed—not at her, but because this happens constantly. Homeowners
+          read blog posts about countertop installation "preparation" that make it
+          sound like they need to demolish half their kitchen before we arrive.
+        </p>
+
+        <p className="mb-6">
+          Here's the truth:{" "}
+          <strong>
+            Professional countertop installation requires almost nothing from you.
+          </strong>{" "}
+          We handle the heavy lifting—literally and figuratively. Let me walk
+          you through what happens on installation day, what minimal prep you
+          need to do, and what you can completely ignore despite what you've
+          read online.
+        </p>
+
+        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">
+          The Night Before: Your 15-Minute Prep Checklist
+        </h2>
+
+        <p className="mb-6">
+          Forget the dramatic renovation blogs that tell you to spend days
+          preparing your kitchen. Here's what you need to do the evening before
+          installation:
+        </p>
+
+        <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+          1. Clear Your Countertops
+        </h3>
+        <p className="mb-4">
+          Move everything off your existing countertops: coffee maker, toaster,
+          knife block, fruit bowl, mail pile, everything. We need a completely
+          clear surface to work with.
+        </p>
+        <p className="mb-6">
+          <strong>Why:</strong> We'll be removing your old countertops, and
+          anything left on them will either get covered in dust or end up on the
+          floor.
+        </p>
+
+        <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+          2. Empty Your Upper Drawers
+        </h3>
+        <p className="mb-4">
+          Pull out the top drawer under your countertops. Cover the contents in
+          the cabinet with a towel.
+        </p>
+        <p className="mb-6">
+          <strong>Why:</strong> To protect your belongings from dust and debris
+          as the existing tops are removed.
+        </p>
+
+        <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+          3. Disconnect Your Plumbing Fixtures
+        </h3>
+        <p className="mb-6">
+          If you have an undermount sink, disconnect the plumbing underneath.
+          Turn off the water supply valves, disconnect the lines, and disconnect
+          the garbage disposal if you have one. Same goes for a cooktop.
+        </p>
+
+        <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+          5. Create a Clear Path
+        </h3>
+        <p className="mb-6">
+          Make sure we can walk from your front door to your kitchen without
+          tripping over shoes, toys, or furniture. We'll be carrying heavy stone
+          slabs—a clear path matters.
+        </p>
+
+        <p className="text-lg font-semibold mb-4">That's it. Seriously.</p>
+
+        <p className="mb-4">You don't need to:</p>
+        <ul className="list-disc pl-6 mb-6 space-y-2">
+          <li>Remove your old countertops (we do that)</li>
+          <li>Reinforce your cabinets (we check them during template)</li>
+          <li>
+            Move your stove or refrigerator (unless they're literally blocking
+            access)
+          </li>
+          <li>Take a day off work (most installations take 1-3 hours)</li>
+        </ul>
+
+        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">
+          Installation Day: Hour-by-Hour Timeline
+        </h2>
+
+        <p className="mb-6">
+          Here's what happens when our team arrives to install stone countertops
+          in Bolton:
+        </p>
+
+        <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+          Hour 1: Removal and Prep
+        </h3>
+        <div className="mb-6">
+          <p className="font-semibold mb-2">What we're doing:</p>
+          <ul className="list-disc pl-6 mb-4 space-y-1">
+            <li>
+              Removing your old countertops carefully (we don't want to damage
+              cabinets)
+            </li>
+            <li>Checking that cabinets are level and stable</li>
+            <li>Cleaning the cabinet tops to ensure proper adhesion</li>
+          </ul>
+          <p className="font-semibold mb-2">What you're doing:</p>
+          <ul className="list-disc pl-6 mb-4 space-y-1">
+            <li>Drinking coffee elsewhere in your house</li>
+            <li>Working from home in another room</li>
+            <li>Running errands</li>
+            <li>Whatever you want—we don't need you hovering</li>
+          </ul>
+          <p>
+            <strong>Noise level:</strong> Moderate. Some scraping, prying, maybe
+            a little sawing if old countertops are stubborn.
+          </p>
+          <p>
+            <strong>Dust level:</strong> Minimal during removal. We'll contain
+            debris with drop cloths.
+          </p>
+        </div>
+
+        <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+          Hour 2-3: Installation
+        </h3>
+        <div className="mb-6">
+          <p className="font-semibold mb-2">What we're doing:</p>
+          <ul className="list-disc pl-6 mb-4 space-y-1">
+            <li>
+              Carrying in your new countertop sections (stone is heavy—this
+              takes 2-3 people)
+            </li>
+            <li>Setting them in place and checking fit</li>
+            <li>Applying adhesive to secure countertops to cabinets</li>
+            <li>Installing undermount sinks if applicable</li>
+            <li>
+              Seaming multiple sections together if your kitchen requires it
+            </li>
+          </ul>
+          <p className="font-semibold mb-2">What you're doing:</p>
+          <ul className="list-disc pl-6 mb-4 space-y-1">
+            <li>Still not hovering (seriously, we're professionals)</li>
+            <li>Maybe checking in once to see progress</li>
+            <li>Staying out of the kitchen while we maneuver heavy stone</li>
+          </ul>
+          <p>
+            <strong>Noise level:</strong> Moderate to high if we're cutting
+            faucet holes.
+          </p>
+          <p>
+            <strong>Dust level:</strong> Higher during cutting. We use wet
+            cutting when possible and a shop vac to minimize dust, but some is
+            inevitable.
+          </p>
+        </div>
+
+        <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+          Finishing and Reconnecting
+        </h3>
+        <div className="mb-6">
+          <p className="font-semibold mb-2">What we're doing:</p>
+          <ul className="list-disc pl-6 mb-4 space-y-1">
+            <li>Sealing seams so they're nearly invisible</li>
+            <li>Cleaning & polishing edges and surfaces</li>
+            <li>Applying sealer coat to natural stone</li>
+            <li>Checking for any imperfections or issues</li>
+          </ul>
+          <p className="font-semibold mb-2">What you're doing:</p>
+          <ul className="list-disc pl-6 mb-4 space-y-1">
+            <li>Getting excited because it's almost done</li>
+            <li>Maybe taking photos for Instagram</li>
+          </ul>
+          <p>
+            <strong>Noise level:</strong> Low. Mostly finishing work.
+          </p>
+          <p>
+            <strong>Dust level:</strong> Minimal. The messy part is over.
+          </p>
+        </div>
+
+        <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+          Final Inspection
+        </h3>
+        <div className="mb-6">
+          <p className="font-semibold mb-2">What we're doing:</p>
+          <ul className="list-disc pl-6 mb-4 space-y-1">
+            <li>Cleaning up all debris and dust</li>
+            <li>Vacuuming inside cabinets and around work area</li>
+            <li>Wiping down new countertops</li>
+            <li>Walking you through care instructions</li>
+            <li>Making sure you're 100% satisfied</li>
+          </ul>
+          <p className="font-semibold mb-2">What you're doing:</p>
+          <ul className="list-disc pl-6 mb-4 space-y-1">
+            <li>Walking through with us</li>
+            <li>Asking any last questions</li>
+            <li>Marveling at how different your kitchen looks</li>
+            <li>Planning that first dinner party</li>
+          </ul>
+          <p>
+            <strong>Noise level:</strong> Quiet. Just cleanup and conversation.
+          </p>
+          <p>
+            <strong>Dust level:</strong> Zero. We clean everything before we
+            leave.
+          </p>
+        </div>
+
+        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">
+          The Real Questions Homeowners Ask
+        </h2>
+
+        <p className="font-bold text-lg mb-2">
+          "Can I use my kitchen sink during installation?"
+        </p>
+        <p className="mb-4">
+          Short answer: No.
+          <br />
+          Longer answer: Your sink will be disconnected for 1-3 hours while we
+          work and the new sink will need 24 hours to cure before reconnecting
+          the plumbing.
+        </p>
+
+        <p className="font-bold text-lg mb-2">
+          "Can I cook dinner that night?"
+        </p>
+        <p className="mb-4">
+          Yes. Your new countertops are ready for immediate use.
+        </p>
+
+        <p className="font-bold text-lg mb-2">
+          "Can you install a new countertop over the old ones?"
+        </p>
+        <p className="mb-6">
+          In some situations, it’s technically possible to install a new
+          countertop over old laminate or tile, but for stone countertops, we
+          almost always remove the existing surface to ensure proper support,
+          level cabinets, and long-term durability.
+        </p>
+      </>
+    ),
+  },
 ];
 
 export const blogsMinimalData = [
@@ -429,5 +695,17 @@ export const blogsMinimalData = [
     readTime: "12 min read",
     excerpt:
       "Learn how to choose between marble and granite based on your lifestyle, maintenance preferences, and design goals.",
+  },
+  {
+    id: 3,
+    title:
+      "What to Actually Expect on Countertop Installation Day: An Hour-by-Hour Guide",
+    slug: "what-to-actually-expect-on-countertop-installation-day-an-hour-by-hour-guide",
+    image: "/images/Picture3.png",
+    date: "Dec 25, 2025",
+    category: "Installation Guide",
+    readTime: "12 min read",
+    excerpt:
+      "Discover the simple 15-minute prep checklist and an honest hour-by-hour guide for a smooth, professional countertop installation in your home.",
   },
 ];
