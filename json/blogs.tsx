@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export const blogs = [
   {
     id: 1,
@@ -515,8 +517,8 @@ export const blogs = [
         </h2>
 
         <p className="mb-6">
-          Here's what happens when our team arrives to install stone countertops
-          in Bolton:
+          Here's what happens when our team arrives to install <Link className="text-blue-600 font-semibold underline" target="_blank" rel="noopener noreferrer" href={'https://www.stoneconcepts.net/service-area/bolton'}>stone countertops
+          in Bolton:</Link>
         </p>
 
         <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
@@ -661,8 +663,8 @@ export const blogs = [
           "Can you install a new countertop over the old ones?"
         </p>
         <p className="mb-6">
-          In some situations, it’s technically possible to install a new
-          countertop over old laminate or tile, but for stone countertops, we
+          In some situations, it’s technically possible to <Link href={'https://www.stoneconcepts.net'} target="_blank" rel="noopener noreferrer" className="text-blue-600 font-semibold underline">install a new
+          countertop over old</Link> laminate or tile, but for stone countertops, we
           almost always remove the existing surface to ensure proper support,
           level cabinets, and long-term durability.
         </p>
